@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+
+
+body {
+    background: #f0ecec;
+    font-family: 'Roboto', sans-serif;
+}
+#home{
+    width: 100%;
+    height: 100%;
+
+} 
+
+header {
+    width: 100%;
+    display: flex;
+    max-height: 65px;
+    background-color: #f0ecec;
+    justify-content: space-between;
+    align-items:center; 
+    position: fixed;
+    transition: all 500ms;
+    
+}
+
+
+
+#icon_menu {
+
+    display: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.tex_logo {
+    font-size: 20px;
+    color: #000;
+}
+
+.menu {
+    display: flex;
+}
+
+.logo_inicio {
+    width: 80px;
+}
+
+nav ul li {
+
+    margin: 10px;
+    list-style: none;
+    padding: 25px 0;
+    margin-left: 70px;
+    float: left;
+    position: relative;
+}
+
+nav ul li a {
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #000;
+    transition: opacity 200ms;
+}
+
+nav ul li a:hover {
+        opacity: 0.50;
+}
+
+nav ul li a::before {
+    display: block;
+    content: '';
+    background: #000a94;
+    width: 0%;
+    height: 5px;
+    bottom: 15px;
+    position: absolute;
+} 
+
+nav ul li a:hover::before {
+    width: 100%;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    
+    color: #ffffff91;
+    font-size: 70px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translatex(-50%) translateY(-50%) ;
+}
+
+h1::after, h1::before {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 5px;
+    background-color:#000a94;
+    top: 0.6em;
+}
+
+h1::before {
+    left: -140px;
+}
+
+h1::after {
+    right: -140px;
+}
+.fondo {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(5, 7, 12, 0.60), rgba(5, 7, 12, 0.60)), url(coding-on-laptop_4460x4460-e1537450504196.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#datos {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.data {
+    width: 90%;
+    max-width: 400px;
+    border-radius: 1em;
+    padding: 3.5em 1.5em;
+    margin: auto;
+    
+    
+}
+
+ 
+#imagen1 {
+    width: 90%;
+}
+
+h2 {
+    margin-bottom:15px;
+    margin-top: 15px;
+    text-align: center;
+    padding: 10px;
+    color: #000a94;
+}
+
+
+.data p1 {
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.data p2 {
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+}
+
+#estudios { 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #bbb0bb25;
+   
+}
+
+.img__nota {
+    width: 90%;
+
+}
+.studies {
+    width: 90%;
+    max-width: 400px;
+    border-radius: 1em;
+    padding: 3.5em 1.5em;
+    margin: auto;
+    
+}
+
+
+
+
+.tex__conteiner h2 {
+    font-size: 50px;
+    margin-bottom:60px;
+    text-align: center;
+    padding: 10px;
+    color: #000a94;
+}
+
+.tex__conteiner p1 {
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.tex__conteiner p2 {
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+#trabajos {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+
+.tex__conteiner {
+
+    width: 90%;
+    max-width: 400px;
+    border-radius: 1em;
+    padding: 3.5em 1.5em;
+    margin: auto;
+}
+
+
+
+
+#contactos {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: #bbb0bb25;
+
+}
+
+
+
+.form {
+    background-color: #ffff;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 1em;
+    padding: 3.5em 1.5em;
+    margin: auto;
+}
+
+.form__container {
+     width: 100%;
+     display: grid;
+     gap: 1em;
+     grid-auto-columns: 100%;
+    
+}
+
+.form__title {
+    color: #000a94;
+    text-align: center;
+    font-size: 1.9em;
+    margin-bottom: .4em;
+}
+
+.form__input {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: .8em 1em;
+    outline: none;
+    border: none;
+    border: 1px solid #bbb0bb;
+    border-radius: 0.2em;
+}
+
+.form__input--message {
+    resize: none;
+    padding: 1.8em 1em;
+    margin-bottom: .5em;
+}
+
+.form__cta {
+    font-family: inherit;
+    font-size: 1rem;
+    background-color:#000a94;
+    color: #ffff;
+    border: none;
+    font-weight: 300;
+    padding: .7em 0;
+    border-radius: .2em;
+    cursor: pointer;
+    font-weight: 400;
+    
+}
+
